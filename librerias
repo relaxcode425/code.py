@@ -1,0 +1,75 @@
+#libreria arreglos:
+#en terminal: pip install numpy
+#en codigo (np: activar abreviatura): 
+import numpy as np
+
+#lista = [1,2,3,4,5]
+#print(lista)
+#arreglo = np.array(lista)
+#print(arreglo)
+ 
+#ndim: dimensiones del arreglo:
+#print(arreglo.ndim)
+
+#size: largo del arreglo
+#print(arreglo.size)
+
+#shape: forma del arreglo
+#print(arreglo.shape)
+
+#slice consultar una fraccion especifica de la lista: [inicio:final:paso]
+#print(arreglo[0:5:2])
+#print(arreglo[::-1])
+
+#llenar array:
+#loops:
+#arr = np.array([i for i in range(1,11)])
+#print(arr)
+
+#arange:
+#arr2 = np.arange(1,11)
+#print(arr2)
+
+#recorrer datos 1 a 1:
+#for i in range (10):
+#    print(arr2[i])
+
+#for i in arr2:
+#    print(i)
+
+#las operaciones con array afectan a cada elemento de forma individual:
+#arr2 += 5
+#print(arr2)
+
+#suma de los elementos del arreglo:
+#print(arr2.sum())
+
+#promedio de todos los elementos del arreglo:
+#print(arr2.mean())
+
+#max: maximo valor del arreglo
+#min: minimop valor del arreglo
+#print(arr2.max())
+
+#array bidimensional
+#manual:
+
+lista = [[1,2,3],[2,3,4],[3,4,5]]
+print(lista)
+
+arreglo = np.array(lista)
+print(arreglo)
+print(arreglo[1,1])
+
+#automatico
+arr2 = np.arange(1,101).reshape((10,10))
+print(arr2)
+
+#Slice
+print(arr2[5::,7::])
+
+arr3 = np.array([[1,2,3],[7,8,9]])
+arr4 = np.array([[4,5,6],[10,11,12]])
+
+arr5 = np.concatenate((arr3,arr4),axis=0)
+print(arr5)
