@@ -2,6 +2,7 @@
 #en terminal: pip install numpy
 #en codigo (np: activar abreviatura): 
 import numpy as np
+import random
 
 #lista = [1,2,3,4,5]
 #print(lista)
@@ -73,3 +74,8 @@ arr4 = np.array([[4,5,6],[10,11,12]])
 
 arr5 = np.concatenate((arr3,arr4),axis=0)
 print(arr5)
+
+arr6 = np.random.randint(0,500,(100))
+arr6.sort()
+arr6 = arr6.reshape((10,10))
+print(arr6)
