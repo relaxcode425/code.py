@@ -1,5 +1,7 @@
 #libreria arreglos:
 #en terminal: pip install numpy
+#py -m ensurepip
+#py -m pip install numpy
 #en codigo (np: activar abreviatura): 
 import numpy as np
 import random
