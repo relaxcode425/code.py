@@ -63,8 +63,8 @@ def comprar():
                                 if x[1] == "full":
                                     puesto = 0
                                     input("ingrese un puesto valido...")
-                            else:
-                                check = True
+                                else:
+                                    check = True
                     else:
                         input("ingrese un puesto valido...")
                 else:
@@ -73,14 +73,14 @@ def comprar():
                 input("ingrese un rut valido...")
     for x in asientos:
         if int(x[0]) == puesto:
-            asientos[cont,1] = "full"
-            asientos[cont,2] = nombre
-            asientos[cont,3] = rut
-            asientos[cont,4] = telefono
-            asientos[cont,5] = banco
-            if cont+1 >= 31:
+            x[1] = "full"
+            x[2] = nombre
+            x[3] = rut
+            x[4] = telefono
+            x[5] = banco
+            if int(x[0]) >= 31:
                 precio = 240000
-            elif cont+1 < 31:
+            elif int(x[0]) < 31:
                 precio = 78900
             if descuento == True:
                 precio = precio * 0.85
@@ -89,7 +89,6 @@ def comprar():
             if descuento == True:
                 print(f"tiene un descuento de 15%")
             input(f"su compra tiene el valor de ${precio}...")
-        cont = cont+1
 
 def anularasiento():
     os.system("cls")
