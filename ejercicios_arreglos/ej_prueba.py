@@ -155,7 +155,7 @@ def modificardatos():
                         print(f"el telefono registrado del pasajero es: {x[4]}")
                         telefono = input("ingrese el telefono por el cual lo desea reemplazar: ")
                         os.system("cls")
-                        x[2] = telefono
+                        x[4] = telefono
                     if confirmacion2 == 1 or confirmacion3 == 1:
                         input("cambios realizados...")
                         os.system("cls")
